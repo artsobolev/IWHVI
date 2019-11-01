@@ -25,21 +25,19 @@ python ./iwhvae_run.py                                              \
     --val_batch_size                     50000                      \
     --val_iwae_samples                   1000                       \
     --val_iwhvi_samples                  100                        \
-    --save_path                          ./exp_dynamic_mnist_d32_lr1e-3_klwu300_tklwu1_tdl1
+    --save_path                          ./exp_dynamic_mnist_d32
 ```
 
 To evaluate a trained model, use the following command:
 ```
-python ./iwhvae_eval.py                                             \
+python ./iwhvae_eval.py ./exp_dynamic_mnist_d32/model-weights-final \
     --n_repeats                          10                         \
     --dataset                            dynamic_mnist              \
     --z_dim                              32                         \
     --noise_dim                          32                         \
     --decoder_arch                       300 300                    \
     --encoder_arch                       300 300                    \
-    --tau_arch                           300 300                    \
-    --train_batch_size                   256                        \
-    ./exp_dynamic_mnist_d32_lr1e-3_klwu300_tklwu1_tdl1/model-weights-final
+    --tau_arch                           300 300
 ```
 
 If you're getting "out of memory" exceptions, add `--test_iwae_batch_size N` with `N` smaller than 5000.
