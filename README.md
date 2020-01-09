@@ -1,6 +1,6 @@
 # Importance Weighted Hierarchical Variational Inference
 
-This repo contains source code for the [Importance Weighted Hierarchical Variational Inference](https://arxiv.org/abs/1905.03290) paper (NeurIPS 2019).
+This repo contains source code for the [Importance Weighted Hierarchical Variational Inference](http://papers.neurips.cc/paper/8350-importance-weighted-hierarchical-variational-inference) paper (NeurIPS 2019).
 
 To train a 32-D MNIST VAE use the following command:
 ```
@@ -44,4 +44,4 @@ If you're getting "out of memory" exceptions, add `--test_iwae_batch_size N` wit
 
 ## Related Links
 
-[ [Preprint](https://arxiv.org/abs/1905.03290) | [Blogpost](http://artem.sobolev.name/posts/2019-05-10-importance-weighted-hierarchical-variational-inference.html) | [Talk](https://youtu.be/pdSu7XfGhHw) | [Toy Example in Colab](https://colab.research.google.com/drive/1slWtEve2M4ogvoa3TLD_TFI4OBCVXJj3) ]
+[ [Paper](http://papers.neurips.cc/paper/8350-importance-weighted-hierarchical-variational-inference) | [Blogpost](http://artem.sobolev.name/posts/2019-05-10-importance-weighted-hierarchical-variational-inference.html) | [Talk](https://youtu.be/pdSu7XfGhHw) | [Toy Example in Colab](https://colab.research.google.com/drive/1slWtEve2M4ogvoa3TLD_TFI4OBCVXJj3) ]
